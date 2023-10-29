@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Antique Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+        .navbar-nav .nav-item .nav-link:hover {
+        color: #e54911; 
+      }
+
+        #description {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        button {
+            background-color: #8B4513;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #A0522D; 
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><h1>Antique.in</h1></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1> The Antique.in Since 1990</h1>
+    
+    
+<main>
+    <img src="think.png" alt="Antique Image" style="max-width: 100%;">
+
+    <div id="description">
+        <p>This interactive antique-themed webpage takes you on a journey through history. Explore the beauty and craftsmanship of antique artifacts and discover the stories they hold.</p>
+        <p>Click the button below to begin your journey.</p>
+    </div>
+
+    <button id="startButton">Start Exploring</button>
+
+    <script>
+       
+        const startButton = document.getElementById("startButton");
+        const description = document.getElementById("description");
+
+        startButton.addEventListener("click", () => {
+            description.innerHTML = "<p>Take a step back in time and uncover the mysteries of bygone eras.</p>";
+            startButton.style.display = "none";
+        });
+    </script>
+</main>
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+    <div class="container mt-4">
+        <div class="text-center">
+            &copy; 2023 Your Antique.In. All rights reserved. | 
+            <a href="https://github.com/GokulanSaravanan/TeamCB4-JobSearchingPortal" target="_blank">GitHub</a>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
